@@ -22,10 +22,20 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@testgorilla/tgo-ui/src/assets/icons",
+                "output": "./icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@testgorilla/tgo-ui/src/assets/images",
+                "output": "./images"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -81,10 +91,20 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@testgorilla/tgo-ui/src/assets/icons",
+                "output": "./icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@testgorilla/tgo-ui/src/assets/images",
+                "output": "./images"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
