@@ -7,7 +7,7 @@ import {Subject} from "rxjs";
   providedIn: 'root'
 })
 export class UserService {
-  currentUser$ = new Subject<any>();
+  currentUser$ = new Subject<any>()
 
   constructor(private readonly http: HttpClient, @Inject(APP_CONSTANTS) private appConstants: AppConstants) {
   }
